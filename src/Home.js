@@ -36,7 +36,7 @@ export class Home extends Component {
                             <td>{account.accountNumber}</td>
                             <td>{account.bankName}</td>
                             <td>{account.bankBranch}</td>
-                            <td><Link to={`/edit/${account.id}`}>Edit Account</Link> | <a onClick={()=>{this.handleOnDelete(account.id)}}>Delete</a></td>
+                            <td><Link to={`/edit/${account.id}`}>Edit Account</Link> | <p style={{ cursor: "pointer" }} onClick={()=>{this.handleOnDelete(account.id)}}>Delete</p></td>
                         </tr>
                     })}
                 </table>
